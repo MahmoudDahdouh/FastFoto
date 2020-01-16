@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.SearchFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        app:buttonGravity="center_vertical"
+        app:title="@string/search"
+        app:titleTextAppearance="@style/MyToolbarStyle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:hint="@string/search"
+        android:padding="12dp" />
+
+    <TextView
+        style="@style/sub_head_textview"
+        android:layout_marginStart="16dp"
+        android:text="@string/history" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        style="@style/sub_head_textview"
+        android:layout_marginStart="16dp"
+        android:text="@string/top_tags" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_top_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        style="@style/sub_head_textview"
+        android:layout_marginStart="16dp"
+        android:text="@string/color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp" />
+</LinearLayout>

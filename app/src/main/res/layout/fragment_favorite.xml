@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.MainActivity">
+    tools:context=".Fragment.FavoriteFragment">
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_main"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_favorite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/main_menu" />
+        android:paddingTop="16dp"
+        app:buttonGravity="center_vertical"
+        app:title="@string/favorite"
+        app:titleTextAppearance="@style/MyToolbarStyle" />
+
+
 </LinearLayout>

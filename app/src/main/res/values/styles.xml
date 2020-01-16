@@ -1,11 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/MyToolbarStyle</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="sub_head_textview">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>

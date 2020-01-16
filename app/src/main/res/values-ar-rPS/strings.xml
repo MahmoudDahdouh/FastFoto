@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FastFoto</string>
+    <string name="any">الكل</string>
+    <string name="category">فئة</string>
+    <string name="color">اللون</string>
+    <string name="discover">اكتشف</string>
+    <string name="download_free_images">حمل صور مجانية</string>
+    <string name="favorite">المفضلة</string>
+    <string name="home">الرئيسية</string>
+    <string name="horizontal">أفقي</string>
+    <string name="info">معلومات</string>
+    <string name="orientation">الاتجاه</string>
+    <string name="search">البحث</string>
+    <string name="vertical">عمودي</string>
+</resources>
