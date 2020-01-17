@@ -7,6 +7,7 @@
     <string name="info">Info</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="download_free_images">Download free images</string>
     <string name="discover">Discover</string>
@@ -22,4 +23,8 @@
     <string name="last_seen">Last seen</string>
     <string name="categories">Categories</string>
     <string name="no_favorite_images">No favorite images !</string>
+    <string name="back">back</string>
+    <string name="next">next</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="skip">skip</string>
 </resources>

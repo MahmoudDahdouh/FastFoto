@@ -82,14 +82,13 @@ public class HomeFragment extends Fragment {
         viewPager2 = layout.findViewById(R.id.home_viewpager);
 
         pages = new ArrayList<>();
-        pages.add(new Page(R.drawable.cat));
-        pages.add(new Page(R.drawable.car));
-        pages.add(new Page(R.drawable.building));
-        pages.add(new Page(R.drawable.flower));
-        pages.add(new Page(R.drawable.cat));
-        pages.add(new Page(R.drawable.car));
-        pages.add(new Page(R.drawable.building));
-        pages.add(new Page(R.drawable.flower));
+        pages.add(new Page(R.drawable.image_1));
+        pages.add(new Page(R.drawable.image_2));
+        pages.add(new Page(R.drawable.image_3));
+        pages.add(new Page(R.drawable.image_4));
+        pages.add(new Page(R.drawable.image_5));
+        pages.add(new Page(R.drawable.image_6));
+        pages.add(new Page(R.drawable.image_7));
 
         pagerAdapter = new ViewpagerAdapter();
         pagerAdapter.setPageList(pages);
@@ -99,7 +98,7 @@ public class HomeFragment extends Fragment {
 
         //
         //margin viewpager 2
-
+        viewPager2.setCurrentItem(1);
         viewPager2.setClipToPadding(false);
         viewPager2.setClipChildren(false);
         viewPager2.setOffscreenPageLimit(3);
@@ -123,12 +122,12 @@ public class HomeFragment extends Fragment {
         popularRecycler.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
 
         popularList = new ArrayList<>();
-        popularList.add(new ItemWithFavorite("Image 1", R.drawable.car, true));
-        popularList.add(new ItemWithFavorite("Image 2", R.drawable.cat, false));
-        popularList.add(new ItemWithFavorite("Image 3", R.drawable.building, true));
-        popularList.add(new ItemWithFavorite("Image 4", R.drawable.car, false));
-        popularList.add(new ItemWithFavorite("Image 5", R.drawable.cat, false));
-        popularList.add(new ItemWithFavorite("Image 6", R.drawable.building, true));
+        popularList.add(new ItemWithFavorite("Image 1", R.drawable.image_7, true));
+        popularList.add(new ItemWithFavorite("Image 2", R.drawable.image_6, false));
+        popularList.add(new ItemWithFavorite("Image 3", R.drawable.image_5, true));
+        popularList.add(new ItemWithFavorite("Image 4", R.drawable.image_4, false));
+        popularList.add(new ItemWithFavorite("Image 5", R.drawable.image_3, false));
+        popularList.add(new ItemWithFavorite("Image 6", R.drawable.image_2, true));
 
         popualrAdapter = new ItemWithFavoriteAdapter();
         popualrAdapter.setItemWithFavoriteList(popularList);
@@ -141,10 +140,11 @@ public class HomeFragment extends Fragment {
         categoriesRecycler.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
 
         categoryNames = new ArrayList<>();
-        categoryNames.add(new CategoryName("Animal", R.drawable.cat));
+
         categoryNames.add(new CategoryName("Buildings", R.drawable.building));
-        categoryNames.add(new CategoryName("Flower", R.drawable.flower));
+        categoryNames.add(new CategoryName("Animal", R.drawable.cat));
         categoryNames.add(new CategoryName("Cars", R.drawable.car));
+        categoryNames.add(new CategoryName("Flower", R.drawable.flower));
 
 
         categoryAdapter = new CategoryAdapter();

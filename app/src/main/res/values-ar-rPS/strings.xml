@@ -13,4 +13,13 @@
     <string name="orientation">الاتجاه</string>
     <string name="search">البحث</string>
     <string name="vertical">عمودي</string>
+    <string name="back">رجوع</string>
+    <string name="categories">التصنيفات</string>
+    <string name="history">السابقة</string>
+    <string name="last_seen">آخر مشاهدة</string>
+    <string name="most_popular">الأكثر شهرة</string>
+    <string name="next">التالي</string>
+    <string name="no_favorite_images">لا يوجد صور</string>
+    <string name="see_all">المزيد</string>
+    <string name="top_tags">أشهر تاجات</string>
 </resources>
