@@ -11,5 +11,6 @@
         android:id="@+id/toolbar_home_search"
         android:icon="@drawable/ic_search"
         android:title="@string/search"
-        app:showAsAction="ifRoom" />
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
 </menu>

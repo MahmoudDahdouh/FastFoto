@@ -7,14 +7,14 @@
     android:orientation="vertical"
     tools:context=".Fragment.FavoriteFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_favorite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        app:buttonGravity="center_vertical"
-        app:title="@string/favorite"
-        app:titleTextAppearance="@style/MyToolbarStyle" />
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar_favorite"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingTop="16dp"-->
+    <!--        app:buttonGravity="center_vertical"-->
+    <!--        app:title="@string/favorite"-->
+    <!--        app:titleTextAppearance="@style/MyToolbarStyle" />-->
 
     <ImageView
         android:id="@+id/imageView"

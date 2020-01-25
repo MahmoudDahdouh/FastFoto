@@ -3,14 +3,13 @@ package com.mahmoud.dahdouh.fastfoto.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.CompositePageTransformer;
@@ -55,27 +54,27 @@ public class HomeFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_home, container, false);
 
         // set toolbar
-        toolbar = layout.findViewById(R.id.toolbar_home);
+//        toolbar = layout.findViewById(R.id.toolbar_home);
+//
+//        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.toolbar_home_search:
-                        Toast.makeText(getContext(), "Search", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-                return true;
-            }
-        });
+//        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//                switch (item.getItemId()) {
+//                    case R.id.toolbar_home_search:
+//                        Toast.makeText(getContext(), "Search", Toast.LENGTH_SHORT).show();
+//                        break;
+//                }
+//                return true;
+//            }
+//        });
         // end toolbar
 
         // viewpager 2
@@ -119,7 +118,7 @@ public class HomeFragment extends Fragment {
 
         // recycler popular
         popularRecycler = layout.findViewById(R.id.home_recycler_popular);
-        popularRecycler.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+        popularRecycler.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
         popularList = new ArrayList<>();
         popularList.add(new ItemWithFavorite("Image 1", R.drawable.image_7, true));

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
@@ -29,15 +28,15 @@ public class FavoriteFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_favorite, container, false);
 
         // set toolbar
-        toolbar = layout.findViewById(R.id.toolbar_favorite);
-
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        toolbar = layout.findViewById(R.id.toolbar_favorite);
+//
+//        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         // end toolbar
 

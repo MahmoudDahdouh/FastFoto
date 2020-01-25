@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
@@ -44,15 +43,15 @@ public class SearchFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_search, container, false);
 
         // set toolbar
-        toolbar = layout.findViewById(R.id.toolbar_search);
-
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        toolbar = layout.findViewById(R.id.toolbar_search);
+//
+//        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getContext(), "Back", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         // end toolbar
 

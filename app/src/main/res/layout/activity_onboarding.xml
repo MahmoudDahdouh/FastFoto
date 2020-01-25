@@ -1,45 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activity.OnboardingActivity">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboarding_viewpager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:padding="32dp" />
+        android:paddingBottom="150dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/onboarding_back_btn"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
         android:text="@string/back"
-        android:visibility="gone" />
+        android:textColor="@color/colorPrimaryDark" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/onboarding_next_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:onClick="next"
+        app:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/next" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_margin="16dp"
-        android:gravity="center_vertical"
-        android:text="..."
-        android:textColor="#000"
-        android:textSize="72dp" />
-</FrameLayout>
+        android:layout_alignTop="@id/onboarding_next_btn"
+        android:layout_alignBottom="@id/onboarding_back_btn"
+        android:layout_toStartOf="@id/onboarding_next_btn"
+        android:layout_toEndOf="@id/onboarding_back_btn"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/indicator_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/indicator_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/indicator_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

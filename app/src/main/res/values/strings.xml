@@ -27,4 +27,19 @@
     <string name="next">next</string>
     <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
     <string name="skip">skip</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_underlined"><u>Sign in</u></string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_underlined"><u>Sign up</u></string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_an_account">Already have an account?</string>
 </resources>
